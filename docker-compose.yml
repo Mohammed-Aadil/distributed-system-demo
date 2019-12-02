@@ -1,0 +1,38 @@
+version: '3.7'
+services:
+  web-client:    
+    image: aadilhub/ds-client:1.0
+    ports:
+      - 80:80
+  doc-to-png:
+    image: aadilhub/ds-doc-to-png:1.0
+    ports:
+      - 5000:5000
+    volumes:
+      - data-vol:/tmp/attachments/static
+      - temp-vol:/tmp/attachments/temp
+    env_file: .env
+    restart: always
+  storage:
+    image: aadilhub/ds-storage:1.0
+    ports:
+      - 8001:8001
+    volumes:
+      - data-vol:/tmp/attachments/static
+      - temp-vol:/tmp/attachments/temp
+    depends_on:
+      - postgres
+    env_file: .env
+    restart: always
+  postgres:
+    image: "postgres"
+    restart: always
+    env_file: .env
+    volumes:
+      - db-vol:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+volumes:
+  data-vol:
+  temp-vol:
+  db-vol:
