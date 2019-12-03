@@ -8,6 +8,7 @@ main
 node_modules/
 /.pnp
 .pnp.js
+pkg/
 
 # testing
 /coverage
