@@ -4,3 +4,6 @@
 [submodule "ds-client"]
 	path = ds-client
 	url = git@mohammed-aadil-github:Mohammed-Aadil/ds-client.git
+[submodule "ds-doc-to-png"]
+	path = ds-doc-to-png
+	url = git@mohammed-aadil-github:Mohammed-Aadil/ds-doc-to-png.git
