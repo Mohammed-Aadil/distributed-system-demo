@@ -1,5 +1,5 @@
 [submodule "ds-storage"]
-	path = ds-storage
+	path = ds-storage/src/ds-storage
 	url = git@mohammed-aadil-github:Mohammed-Aadil/ds-storage.git
 [submodule "ds-client"]
 	path = ds-client
