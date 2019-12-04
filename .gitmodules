@@ -1,9 +1,9 @@
 [submodule "ds-client"]
 	path = ds-client
-	url = git@mohammed-aadil-github:Mohammed-Aadil/ds-client.git
+	url = git@github.com:Mohammed-Aadil/ds-client.git
 [submodule "ds-doc-to-png"]
 	path = ds-doc-to-png
-	url = git@mohammed-aadil-github:Mohammed-Aadil/ds-doc-to-png.git
+	url = git@github.com:Mohammed-Aadil/ds-doc-to-png.git
 [submodule "ds-storage/src/ds-storage"]
 	path = ds-storage/src/ds-storage
-	url = git@mohammed-aadil-github:Mohammed-Aadil/ds-storage.git
+	url = git@github.com:Mohammed-Aadil/ds-storage.git
