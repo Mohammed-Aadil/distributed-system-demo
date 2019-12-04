@@ -1,6 +1,6 @@
 # Distributes system demo
 
-A project with following services
+A project with following services. This project uses all services as git sub-modules if you clone repo and wanted to inspect code of below services, clone sub-modules too.
 
 1. File uploader service for media files (golang) [`storage`]:
    It have endpoint to upload and download doc file. It communicates to `doc_to_png` and `postgres` services. It also save attachment data in database.
@@ -15,7 +15,9 @@ A project with following services
 
 ## How to run
 
-1. `cd distributed-system-demo`
-2. `docker-compose up`
+1. `git clone git@github.com:Mohammed-Aadil/distributed-system-demo.git --recurse-submodules`
+2. `cd distributed-system-demo`
+3. `docker-compose up` or `docker stack deploy -c docker-compose.yml ds`
+4. To close all services `docker-compose down` or `docker stack rm ds`
 
 That's all you need to do.
